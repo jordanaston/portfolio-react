@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'custom-black': 'rgb(10,13,16)',
+        'custom-black': 'rgb(20, 23, 26)',
+      },
+      spacing: {
+        '30': '30px',
       }
     },
   },
