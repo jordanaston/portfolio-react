@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Capture The Waves";
+    src: url("../fonts/CaptureTheWaves-w1rx8.ttf") format("truetype");
+  }
+
+@font-face {
+  font-family: "Capture The Waves Italic";
+  src: url("../fonts/CaptureTheWavesItalic-7BD3R.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Remboy Regular";
+  src: url("../fonts/RemboyRegular-Yzr4O.ttf") format("truetype");
+}  
+
+.font {
+    font-family: "Capture The Waves";
+}  
