@@ -1,9 +1,12 @@
 import React from 'react'
-import ParticleBackground from '../components/ParticleBackground'
+import CodeSymbol from '../components/CodeSymbol'
 
 function Projects() {
   return (
-    <ParticleBackground />
+    <div>
+        <h1>Projects</h1>
+        <CodeSymbol />
+    </div>
   )
 }
 
