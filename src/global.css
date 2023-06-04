@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Capture The Waves';
+  src: url('./fonts/Capture The Waves-w1rx8.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+

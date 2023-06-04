@@ -1,11 +1,12 @@
 import React from 'react'
 import CodeSymbol from '../components/CodeSymbol'
+import MobileMenu from '../components/MobileMenu'
 
 function Info() {
   return (
     <div>
-        <h1>Info</h1>
         <CodeSymbol />
+        <MobileMenu />
     </div>
   )
 }
