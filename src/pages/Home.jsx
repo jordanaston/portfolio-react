@@ -2,27 +2,23 @@ import React from 'react';
 import CodeSymbol from '../components/CodeSymbol';
 import MobileMenu from '../components/MobileMenu';
 import HomeContent from '../components/HomeContent';
-import ModeButtons from '../components/ModeButtons';
 import ProLinks from '../components/ProLinks';
 import TopNavBar from '../components/TopNavBar';
 
-function Home() {
+function Home({ isDarkMode }) {
   return (
     <div>
       <div className="fixed top-2 left-2 right-3 flex justify-between items-start">
-        <CodeSymbol />
+        <CodeSymbol isDarkMode={isDarkMode} />
         <div className="md:hidden">
-          <MobileMenu />
+          <MobileMenu isDarkMode={isDarkMode} />
         </div>
         <div className="hidden md:flex">
-          <TopNavBar />
+          <TopNavBar isDarkMode={isDarkMode} />
         </div>
-        <HomeContent />
-        <div className="fixed bottom-5 left-6 text-lg">
-          <ModeButtons />
-        </div>
+        <HomeContent isDarkMode={isDarkMode} />
         <div className="fixed bottom-5 right-5 text-right text-lg">
-          <ProLinks />
+          <ProLinks isDarkMode={isDarkMode} />
         </div>
       </div>
     </div>
@@ -30,5 +26,6 @@ function Home() {
 }
 
 export default Home;
+
 
 

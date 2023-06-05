@@ -2,25 +2,21 @@ import React from 'react'
 import CodeSymbol from '../components/CodeSymbol'
 import MobileMenu from '../components/MobileMenu'
 import TopNavBar from '../components/TopNavBar'
-import ModeButtons from '../components/ModeButtons'
 import ProLinks from '../components/ProLinks'
 
-function Projects() {
+function Projects({ isDarkMode }) {
   return (
     <div>
       <div className="fixed top-2 left-2 right-3 flex justify-between items-start">
-        <CodeSymbol />
+        <CodeSymbol isDarkMode={isDarkMode} />
         <div className="md:hidden">
-          <MobileMenu />
+          <MobileMenu isDarkMode={isDarkMode} />
         </div>
         <div className="hidden md:flex">
-          <TopNavBar />
-        </div>
-        <div className="fixed bottom-5 left-6 text-lg">
-          <ModeButtons />
+          <TopNavBar isDarkMode={isDarkMode} />
         </div>
         <div className="fixed bottom-5 right-5 text-right text-lg">
-          <ProLinks />
+          <ProLinks isDarkMode={isDarkMode} />
         </div>
       </div>
     </div>
