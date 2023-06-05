@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark-mode-text': 'rgb(146,154,142)',
-        'light-mode-text': 'rgb(30,30,30)'
+        'dark-mode-color': 'rgb(146,154,142)',
+        'light-mode-color': 'rgb(30,30,30)'
       },
       backgroundImage: theme => ({
         'dark-mode-bg': "url('./assets/bg-dark-mode.jpg')",
