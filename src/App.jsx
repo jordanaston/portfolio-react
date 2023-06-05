@@ -34,13 +34,13 @@ function App() {
             className={`lg:text-xl mr-5 ${buttonTextColor} transition-transform hover:scale-110`}
             onClick={handleLightMode}
           >
-            ■ light
+            {isDarkMode ? '□' : '■'} light
           </button>
           <button
             className={`lg:text-xl ${buttonTextColor} transition-transform hover:scale-110`}
             onClick={handleDarkMode}
           >
-            ■ dark
+            {isDarkMode ? '■' : '□'} dark
           </button>
         </div>
       </div>
@@ -49,6 +49,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
