@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
-function ProLinks() {
+function ProLinks({ isDarkMode }) {
   const [hoveredLink, setHoveredLink] = useState(null);
 
   const linkStyle = (path) => ({
     display: 'inline-block',
-    color: hoveredLink === path ? '#1E1E1E' : '',
+    color: hoveredLink === path ? (isDarkMode ? '#1E1E1E' : '#929A8E') : '',
     transition: 'color 0.3s ease, transform 0.3s ease',
     transform: hoveredLink === path ? 'scale(1.1)' : 'scale(1)',
   });
 
   return (
-    <nav className="text-dark-mode-text font-roboto-mono sm:pb-2 sm:pr-2 lg:mr-5 lg:mb-3">
+    <nav className={`text-${isDarkMode ? 'dark' : 'light'}-mode-color font-roboto-mono sm:pb-2 sm:pr-2 lg:mr-5 lg:mb-3`}>
       <ul>
         <li className="lg:text-xl lg:mb-2">
           <a 
@@ -39,8 +39,9 @@ function ProLinks() {
         </li>
       </ul>
     </nav>
-  )
+  );
 }
 
-export default ProLinks
+export default ProLinks;
+
 
