@@ -25,12 +25,12 @@ function MobileMenu({isDarkMode}) {
         <img src={isDarkMode ? MobileMenuDark : MobileMenuLight} alt="Mobile Menu Image" className="w-16 pt-1 sm:pt-3 sm:mr-3" />
       </button>
       <div
-        className={`fixed inset-0 flex items-center justify-start z-50 bg-light-mode-color transition-transform duration-300 ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`fixed inset-0 flex items-center justify-start z-50 transition-transform duration-300 ${
+        isDarkMode ? 'bg-light-mode-color' : 'bg-dark-mode-color'
+        } ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
         <div className="absolute top-0 right-0 h-full p-4 flex flex-col items-end">
-          <button onClick={handleClick} className="text-4xl text-dark-mode-color">
+          <button onClick={handleClick} className={`text-4xl ${isDarkMode ? 'text-dark-mode-color' : 'text-light-mode-color'}`}>
             X
           </button>
         </div>
@@ -39,7 +39,7 @@ function MobileMenu({isDarkMode}) {
             <Link
               to="/"
               onClick={handleClick}
-              className="block text-5xl font-light text-dark-mode-color ml-2"
+              className={`block text-5xl font-light ml-2 ${isDarkMode ? 'text-dark-mode-color' : 'text-light-mode-color'}`}
               style={linkStyles}
               onMouseOver={(e) => {
                 e.target.style.fontSize = linkHoverStyles.fontSize;
@@ -55,7 +55,7 @@ function MobileMenu({isDarkMode}) {
             <Link
               to="/projects"
               onClick={handleClick}
-              className="block text-5xl font-light text-dark-mode-color ml-2"
+              className={`block text-5xl font-light ml-2 ${isDarkMode ? 'text-dark-mode-color' : 'text-light-mode-color'}`}
               style={linkStyles}
               onMouseOver={(e) => {
                 e.target.style.fontSize = linkHoverStyles.fontSize;
@@ -71,7 +71,7 @@ function MobileMenu({isDarkMode}) {
             <Link
               to="/info"
               onClick={handleClick}
-              className="block text-5xl font-light text-dark-mode-color ml-2"
+              className={`block text-5xl font-light ml-2 ${isDarkMode ? 'text-dark-mode-color' : 'text-light-mode-color'}`}
               style={linkStyles}
               onMouseOver={(e) => {
                 e.target.style.fontSize = linkHoverStyles.fontSize;
@@ -90,6 +90,7 @@ function MobileMenu({isDarkMode}) {
 }
 
 export default MobileMenu;
+
 
 
 
