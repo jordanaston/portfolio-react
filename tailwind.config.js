@@ -4,13 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark-mode-color': 'rgb(146,154,142)',
-        'light-mode-color': 'rgb(30,30,30)'
+        'dark-mode-color': 'rgb(163,163,163)',
+        'light-mode-color': 'rgb(13,13,13)'
       },
-      backgroundImage: theme => ({
-        'dark-mode-bg': "url('./assets/bg-dark-mode.jpg')",
-        'light-mode-bg': "url('./assets/bg-light-mode.jpg')"
-      }),
       spacing: {
         '30': '30px',
       },
