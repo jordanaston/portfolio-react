@@ -48,7 +48,7 @@ function MobileMenu({isDarkMode}) {
                 e.target.style.fontSize = linkStyles.fontSize;
               }}
             >
-              Home
+              ■ Home
             </Link>
           </li>
           <li>
@@ -64,7 +64,7 @@ function MobileMenu({isDarkMode}) {
                 e.target.style.fontSize = linkStyles.fontSize;
               }}
             >
-              Projects
+              ■ Projects
             </Link>
           </li>
           <li>
@@ -80,7 +80,7 @@ function MobileMenu({isDarkMode}) {
                 e.target.style.fontSize = linkStyles.fontSize;
               }}
             >
-              Info
+              ■ Info
             </Link>
           </li>
         </ul>

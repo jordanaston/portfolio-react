@@ -10,7 +10,7 @@ function TopNavBar({ isDarkMode }) {
     display: 'inline-block',
     paddingBottom: '0.3px',
     borderBottom: location.pathname === path ? '2px solid' : 'none',
-    color: hoveredLink === path && location.pathname !== path ? (isDarkMode ? '#1E1E1E' : '#929A8E') : '',
+    color: hoveredLink === path && location.pathname !== path ? (isDarkMode ? '#1E1E1E' : '#A3A3A3') : '',
     transform: hoveredLink === path && location.pathname !== path ? 'scale(1.05)' : 'scale(1)',
     transition: 'color 0.3s ease, transform 0.3s ease',
   });

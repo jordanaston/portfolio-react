@@ -4,7 +4,7 @@ function CodeSymbol({ isDarkMode }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const symbolStyle = {
-    color: isHovered ? (isDarkMode ? '#1E1E1E' : '#929A8E') : '',
+    color: isHovered ? (isDarkMode ? '#1E1E1E' : '#A3A3A3') : '',
     transform: isHovered ? 'scale(1.05)' : 'scale(1)',
     transition: 'color 0.3s ease, transform 0.3s ease',
     cursor: 'pointer',

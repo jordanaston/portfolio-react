@@ -5,7 +5,7 @@ function ProLinks({ isDarkMode }) {
 
   const linkStyle = (path) => ({
     display: 'inline-block',
-    color: hoveredLink === path ? (isDarkMode ? '#1E1E1E' : '#929A8E') : '',
+    color: hoveredLink === path ? (isDarkMode ? '#1E1E1E' : '#A3A3A3') : '',
     transition: 'color 0.3s ease, transform 0.3s ease',
     transform: hoveredLink === path ? 'scale(1.1)' : 'scale(1)',
   });
