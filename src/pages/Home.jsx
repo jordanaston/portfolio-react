@@ -4,10 +4,12 @@ import MobileMenu from '../components/MobileMenu';
 import HomeContent from '../components/HomeContent';
 import ProLinks from '../components/ProLinks';
 import TopNavBar from '../components/TopNavBar';
+import PreScreen from '../components/PreScreen';
 
 function Home({ isDarkMode }) {
   return (
     <div>
+      <PreScreen />
       <div className="fixed top-2 left-2 right-3 flex justify-between items-start">
         <CodeSymbol isDarkMode={isDarkMode} />
         <div className="md:hidden">
@@ -26,6 +28,7 @@ function Home({ isDarkMode }) {
 }
 
 export default Home;
+
 
 
 
