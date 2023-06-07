@@ -13,7 +13,7 @@ function ProLinks({ isDarkMode }) {
   return (
     <nav className={`text-${isDarkMode ? 'dark' : 'light'}-mode-color font-roboto-mono sm:pb-2 sm:pr-2 lg:mr-5 lg:mb-3`}>
       <ul>
-        <li className="lg:text-xl lg:mb-2">
+        <li className="lg:text-lg lg:mb-2">
           <a 
             href="https://github.com/jordanaston" 
             target="_blank" 
@@ -25,7 +25,7 @@ function ProLinks({ isDarkMode }) {
             github ➚
           </a> 
         </li>
-        <li className="lg:text-xl">
+        <li className="lg:text-lg">
           <a 
             href="https://www.linkedin.com/in/jordan-aston-164aab178/" 
             target="_blank" 

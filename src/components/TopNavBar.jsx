@@ -16,7 +16,7 @@ function TopNavBar({ isDarkMode }) {
   });
 
   return (
-    <div className={`text-${isDarkMode ? 'dark' : 'light'}-mode-color text-xl md:mt-5 md:mr-5 lg:mr-9 lg:mt-7 lg:text-2xl lg:font-light`}>
+    <div className={`text-${isDarkMode ? 'dark' : 'light'}-mode-color text-xl md:mt-5 md:mr-5 lg:mr-9 lg:mt-7 lg:text-xl lg:font-light`}>
       <ul className="flex space-x-6">
         <li>
           <Link 

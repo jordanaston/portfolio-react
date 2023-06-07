@@ -16,7 +16,7 @@ function MobileMenu({isDarkMode}) {
   };
 
   const linkHoverStyles = {
-    fontSize: '3rem',
+    fontSize: '2.5rem',
   };
 
   return (

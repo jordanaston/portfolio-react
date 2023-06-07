@@ -7,7 +7,7 @@ import ProLinks from '../components/ProLinks'
 function Info({ isDarkMode }) {
   return (
     <div>
-      <div className="fixed top-2 left-2 right-3 flex justify-between items-start">
+      <div className="fixed top-2 left-2 right-3 flex justify-between items-start z-10">
         <CodeSymbol isDarkMode={isDarkMode} />
         <div className="md:hidden">
           <MobileMenu isDarkMode={isDarkMode} />

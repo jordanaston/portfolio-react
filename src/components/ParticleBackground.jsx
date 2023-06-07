@@ -32,7 +32,7 @@ const ParticleBackground = ({ isDarkMode }) => {
     }
 
     particlesGeometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
-    const particlesMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: isMobile ? 0.01 : 0.001, transparent: true, opacity: isDarkMode ? 0.07 : 0.4 });
+    const particlesMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: isMobile ? 0.01 : 0.001, transparent: true, opacity: isDarkMode ? 0.07 : 0.5 });
     const particles = new THREE.Points(particlesGeometry, particlesMaterial);
     scene.add(particles);
 
