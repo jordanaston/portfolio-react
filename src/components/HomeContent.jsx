@@ -11,7 +11,7 @@ function HomeContent({ isDarkMode }) {
           <span className="whitespace-nowrap">Jordan Aston.</span>
         </h1>
         <div className="">
-          <p className="font-roboto-mono font-light text-md md:text-lg lg:text-xl">
+          <p className="font-roboto-mono font-light text-sm md:text-md lg:text-lg">
             I'm an emerging developer from Brisbane, Australia, passionate about building dynamic and intuitive web applications.<br/><br/>
             Here you'll find a selection of my most recent work, projects I've built with dedication and a love for development.
           </p>

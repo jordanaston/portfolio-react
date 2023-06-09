@@ -18,7 +18,7 @@ function CodeSymbol({ isDarkMode }) {
         style={symbolStyle}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        onClick={() => window.open('https://github.com/jordanaston', '_blank')}
+        onClick={() => window.open('https://github.com/jordanaston/portfolio-react', '_blank')}
       >
         &lt; / &gt;
       </p>
