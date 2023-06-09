@@ -12,8 +12,8 @@ function HomeContent({ isDarkMode }) {
         </h1>
         <div className="">
           <p className="font-roboto-mono font-light text-md md:text-lg lg:text-xl">
-            I'm a developer from Brisbane, Australia with the goal of creating a seamless UX with every project.<br/><br/>
-            Inspired by simplicity and purpose, I believe in expression through experimentation.
+            I'm an emerging developer from Brisbane, Australia, passionate about building dynamic and intuitive web applications.<br/><br/>
+            Here you'll find a selection of my most recent work, projects I've built with dedication and a love for development.
           </p>
         </div>
       </div>
