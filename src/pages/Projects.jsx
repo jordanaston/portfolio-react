@@ -56,7 +56,7 @@ function Projects({ isDarkMode }) {
         </div>
       </div>
       <div className="flex flex-col items-center overflow-y-auto pt-16 pb-24">
-        <div className="container mx-auto h-full max-h-full overflow-y-auto">
+        <div className="overflow-y-auto">
           <h1 className={`text-center text-xl font-roboto-mono font-light my-5 ${textColor}`}>Recent Work</h1>
           <div className="flex flex-wrap justify-center items-center">
             {projectItems.map((project, index) => (
